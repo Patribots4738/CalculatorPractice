@@ -53,8 +53,7 @@ public class Calculator {
                 output = arr[0] / arr[1];
                 break;
 
-            default: 
-                System.out.println("Hello?");
+            default:
 
         }
 
@@ -124,29 +123,29 @@ public class Calculator {
 
             input = Calculator.input.nextLine();
 
-            if (input.equals("A")) {
+            switch (input) {
 
-                functions = Functions.ADD;
-                running = false;
+                case "A":
+                    functions = Functions.ADD;
+                    running = false;
+                    break;
 
-            } else if (input.equals("S")) {
+                case "S":
+                    functions = Functions.SUBTRACT;
+                    running = false;
+                    break;
 
-                functions = Functions.SUBTRACT;
-                running = false;
+                case "M":
+                    functions = Functions.MULTIPLY;
+                    running = false;
+                    break;
 
-            } else if (input.equals("M")) {
+                case "D":
+                    functions = Functions.DIVIDE;
+                    running = false;
+                    break;
 
-                functions = Functions.MULTIPLY;
-                running = false;
-
-            } else if (input.equals("D")) {
-
-                functions = Functions.DIVIDE;
-                running = false;
-
-            } else {
-
-                System.out.println("Yo. You entered in not a real thing to do. Do it again. Or else...");
+                default:
 
             }
 
