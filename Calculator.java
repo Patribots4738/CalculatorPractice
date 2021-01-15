@@ -39,12 +39,22 @@ public class Calculator {
 
             case ADD:
                 output = arr[0] + arr[1];
+                break;
+                
             case SUBTRACT:
                 output = arr[0] - arr[1];
+                break;
+
             case MULTIPLY:
                 output = arr[0] * arr[1];
+                break;
+
             case DIVIDE:
                 output = arr[0] / arr[1];
+                break;
+
+            default: 
+                System.out.println("Hello?");
 
         }
 
