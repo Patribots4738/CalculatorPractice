@@ -53,8 +53,6 @@ public class Calculator {
                 output = arr[0] / arr[1];
                 break;
 
-            default:
-
         }
 
         return output;
@@ -144,8 +142,6 @@ public class Calculator {
                     functions = Functions.DIVIDE;
                     running = false;
                     break;
-
-                default:
 
             }
 
