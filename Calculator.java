@@ -79,7 +79,7 @@ public class Calculator {
 
             } catch (Exception e) {
 
-                System.out.println("BRUH. THAT IS NOT A NUMBER.");
+                System.out.println("HEY! THAT IS NOT A NUMBER.");
 
             }
 
@@ -99,7 +99,7 @@ public class Calculator {
 
             } catch (Exception e) {
 
-                System.out.println("BRUH. THAT IS NOT A NUMBER.");
+                System.out.println("HEY! THAT IS NOT A NUMBER.");
 
             }
 
