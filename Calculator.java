@@ -119,28 +119,28 @@ public class Calculator {
 
         while (running) {
 
-            System.out.println("WHAT FUNCTION DO YOU WANT TO USE!!!!! (\"A\", \"S\", \"M\", or \"D\")");
+            System.out.println("WHAT FUNCTION DO YOU WANT TO USE!!!!! (\"+\", \"-\", \"*\", or \"/\")");
 
             input = Calculator.input.nextLine();
 
             switch (input) {
 
-                case "A":
+                case "+":
                     functions = Functions.ADD;
                     running = false;
                     break;
 
-                case "S":
+                case "-":
                     functions = Functions.SUBTRACT;
                     running = false;
                     break;
 
-                case "M":
+                case "*":
                     functions = Functions.MULTIPLY;
                     running = false;
                     break;
 
-                case "D":
+                case "/":
                     functions = Functions.DIVIDE;
                     running = false;
                     break;
