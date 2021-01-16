@@ -26,7 +26,38 @@ public class Calculator {
     
         }
 
-        System.out.println(expression + " " + isValid);
+        String numbers[] = expression.split("[+\\-\\*\\/]");
+
+        int num1 = Integer.parseInt(numbers[0]);
+        int num2 = Integer.parseInt(numbers[1]);
+
+        int answer = 0;
+
+        if(expression.contains("+")){
+            
+            answer = num1 + num2;
+        
+        }
+
+        if(expression.contains("-")){
+            
+            answer = num1 - num2;
+        
+        }        
+
+        if(expression.contains("*")){
+            
+            answer = num1 * num2;
+        
+        }
+
+        if(expression.contains("/")){
+            
+            answer = num1 / num2;
+        
+        }     
+
+        System.out.println(answer);
 
     }
     
