@@ -10,7 +10,7 @@ public class Calculator {
 
         String expression = " ";
 
-        Pattern pattern = Pattern.compile("^[0-9\\+\\-\\*\\/]*$");
+        Pattern pattern = Pattern.compile("^[0-9\\+\\-\\*\\/\\.]*$");
 
         boolean isValid = false;
 
@@ -28,10 +28,10 @@ public class Calculator {
 
         String numbers[] = expression.split("[+\\-\\*\\/]");
 
-        int num1 = Integer.parseInt(numbers[0]);
-        int num2 = Integer.parseInt(numbers[1]);
+        double num1 = Double.parseDouble(numbers[0]);
+        double num2 = Double.parseDouble(numbers[1]);
 
-        int answer = 0;
+        double answer = 0;
 
         if(expression.contains("+")){
             
