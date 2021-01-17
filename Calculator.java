@@ -22,13 +22,16 @@ public static void main(String[] args) {
                 break;
     
             case "*":
-            Functions.muitiply();
+                Functions.muitiply();
+    
+                break; 
+        
+            case "/":
+                Functions.divide();
     
                 break; 
         } 
     
     }
-   
-
 }
 }
