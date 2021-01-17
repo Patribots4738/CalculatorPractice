@@ -10,7 +10,9 @@ public class Calculator {
 
         String expression = " ";
 
-        Pattern pattern = Pattern.compile("^[0-9\\+\\-\\*\\/\\.]*$");
+        String RegEx ="^\\d+\\.?\\d*[\\+\\-\\*\\/]\\d+\\.?\\d*$";
+
+        Pattern pattern = Pattern.compile(RegEx);
 
         boolean isValid = false;
 
@@ -23,6 +25,11 @@ public class Calculator {
             Matcher matcher = pattern.matcher(expression);
 
             isValid = matcher.find();
+
+            if(expression.equals("exit")){
+                System.exit(0);
+                System.out.println("failed to exit");
+            }
     
         }
 
@@ -37,21 +44,15 @@ public class Calculator {
             
             answer = num1 + num2;
         
-        }
-
-        if(expression.contains("-")){
+        }else if(expression.contains("-")){
             
             answer = num1 - num2;
         
-        }        
-
-        if(expression.contains("*")){
+        }else if(expression.contains("*")){
             
             answer = num1 * num2;
         
-        }
-
-        if(expression.contains("/")){
+        }else{
             
             answer = num1 / num2;
         
