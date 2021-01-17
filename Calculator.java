@@ -7,6 +7,7 @@ public class Calculator
 public static void main(String[] args) {
 
     while(true){
+        System.out.println(" + is addition,   - is subtract,   / is division,   * is multiplication");
         System.out.println("Enter your operation.");
         String calculatorString = scanner.nextLine(); 
 

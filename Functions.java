@@ -4,7 +4,7 @@ public class Functions{
 
    static Scanner scanner;
 
-   // Add Function 
+// Add Function 
     public static void add(){
  
         try
